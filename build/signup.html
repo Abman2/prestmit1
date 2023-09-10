@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presmit</title>
+    <link rel="stylesheet" href="../images/favicon.ico" >
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <!-- Include Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Include custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <script src="signup.js" defer>
+    </script>
+  </head>
+  <body class="max-w-xs sm:max-w-7xl mx-auto">
+    <main class="h-fit sm:h-screen max-w-full flex sm:flex-row flex-col relative">
+        
+
+      
+      <section class="overflow-y-scroll w-full  " id="sign" >
+        <div class="mx-auto max-w-sm">
+          <h1 class="mb-5 pt-2 h-7 w-28">
+            <img src="../images/prestdark.png" alt="" class="p-2" />
+          </h1>
+          <div class="outline rounded-full inline outline-2 ms-1 outline-blue-800 px-1.5 py-2">
+            <i class="fa-solid fa-arrow-left fa-xl my-7  text-blue-800 rounded-full"></i>
+          </div>
+        </div>
+        <!-- sign in -->
+            <section class="mx-auto max-w-sm h-fit leye" id="signin">
+                
+                  <h1 class="text-3xl sm:text-4xl text-blue-900 mb-3 font-light">Sign In</h1>
+                  <p class="sm:text-xl text-gray-500">with your Prestmit account</p>
+                  <form action="" class="mt-5 space-y-5 text-sm">
+                    <!-- email -->
+            <div class="input-with-errortag">
+                <div class="input-with-label relative">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="22"
+                    viewBox="0 -960 960 960"
+                    class="absolute bottom-2 right-4"
+                    width="22">
+                    <path
+                      d="M192-212q-26 0-43-17t-17-43v-416q0-26 17-43t43-17h576q26 0 43 17t17 43v416q0 26-17 43t-43 17H192Zm288-274L160-698v426q0 14 9 23t23 9h576q14 0 23-9t9-23v-426L480-486Zm0-34 304-200H176l304 200ZM160-698v-22 448q0 14 9 23t23 9h-32v-458Z" />
+                  </svg>
+                  <input
+                    type="email"
+                    name="email"
+                    id="sigin-email"
+                  
+                  
+                    placeholder="Your Email"
+                    class="w-full border border-gray-200 h-10 rounded-md p-3 outline-blue-300" />
+                    <span class="pt-1 ms-2 text-red-600 font-medium italic text-sm siginError absolute left-0 top-9 siginSucess"></span>
+                </div>
+              </div>
+               <!-- password -->
+            <div class="input-with-errortag">
+                <div class="input-with-label relative">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="absolute bottom-2 right-4 p-1">
+                    <path
+                      d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>
+                  </svg>
+                  <input
+                    type="password"
+                    name="password"
+                    id="sigin-password"
+                  
+                    placeholder="Password"
+                    class="w-full border border-gray-200 h-10 rounded-md p-3 outline-blue-300" />
+                    <span class="pt-1 ms-2 siginError text-red-600 font-medium italic z-10 absolute left-0 top-9 siginSucess"></span>
+                </div>
+
+              </div>
+              <div class="inline-flex ">
+                <div class="inline-flex items-center">
+                    <input type="checkbox" name="rememberme" id="rememberme" class="h-4 w-4 mr-2">
+                    <label for="rememberme" class="text-base ">Remember Me</label>
+                </div>
+              </div>
+              <a href="" class="text-blue-600 text-base float-right">Forgot Your Password?</a>
+              <div>
+                <button type="submit" class="h-10 bg-blue-600 text-white font-semibold w-full rounded-md" id="signInButton" >Sign In</button>
+            </div>
+                  </form>
+               <p class="pt-5 text-slate-400">Don't have an account? <a href="#" class="text-blue-700 cursor-pointer font-semibold" id="signUpLink">Sign up here</a></p>
+
+            </section>
+
+  <!-- sign up -->  
+
+        <section class="mx-auto max-w-sm h-fit mb-28 pb-5 hidden" id="signup">
+          <h1 class="text-3xl sm:text-4xl text-blue-900 mb-3 font-light">Sign Up</h1>
+          <p class="sm:text-xl text-gray-500">Create New Prestmit Account</p>
+          <form action="" class="mt-8 space-y-5 text-sm">
+            <!-- username -->
+            <div class="input-with-errortag">
+              <div class="input-with-label relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25"
+                  viewBox="0 -960 960 960"
+                  class="absolute bottom-2 right-4"
+                  width="25">
+                  <path
+                    d="M480-512q-44.55 0-76.275-31.725Q372-575.45 372-620q0-44.55 31.725-76.275Q435.45-728 480-728q44.55 0 76.275 31.725Q588-664.55 588-620q0 44.55-31.725 76.275Q524.55-512 480-512ZM212-232v-52q0-22 13.5-41.5T262-356q55-26 109.5-39T480-408q54 0 108.5 13T698-356q23 11 36.5 30.5T748-284v52H212Zm28-28h480v-24q0-14-9.5-26.5T684-332q-48-23-99.687-35.5Q532.627-380 480-380q-52.626 0-104.313 12.5Q324-355 276-332q-17 9-26.5 21.5T240-284v24Zm240-280q33 0 56.5-23.5T560-620q0-33-23.5-56.5T480-700q-33 0-56.5 23.5T400-620q0 33 23.5 56.5T480-540Zm0-80Zm0 360Z" />
+                </svg>
+                <input
+                  type="text"
+                  name="username"
+                  id="sigup-username"
+                  placeholder="Username"
+          
+                  class="w-full border border-gray-200 h-10 rounded-md p-3 outline-blue-300" />
+                  <span class="pt-1 ms-2 siginError text-red-600 font-medium italic z-10 absolute left-0 top-9 siginSucess"></span>
+
+              </div>
+            </div>
+          
+            <!-- email -->
+            <div class="input-with-errortag">
+              <div class="input-with-label relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="22"
+                  viewBox="0 -960 960 960"
+                  class="absolute bottom-2 right-4"
+                  width="22">
+                  <path
+                    d="M192-212q-26 0-43-17t-17-43v-416q0-26 17-43t43-17h576q26 0 43 17t17 43v416q0 26-17 43t-43 17H192Zm288-274L160-698v426q0 14 9 23t23 9h576q14 0 23-9t9-23v-426L480-486Zm0-34 304-200H176l304 200ZM160-698v-22 448q0 14 9 23t23 9h-32v-458Z" />
+                </svg>
+                <input
+                  type="email"
+                  name="email"
+                  id="sigup-email"
+                  placeholder="Your Email"
+                  class="w-full border border-gray-200 h-10 rounded-md p-3 outline-blue-300" />
+                  <span class="pt-1 ms-2 siginError text-red-600 font-medium italic z-10 absolute left-0 top-9 siginSucess"></span>
+              </div>
+            </div>
+
+            <!-- phone number -->
+            <div class="input-with-errortag">
+              <div class="input-with-label relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="22"
+                  viewBox="0 -960 960 960"
+                  class="absolute bottom-6 right-4"
+                  width="22">
+                  <path
+                    d="M312-92q-26 0-43-17t-17-43v-656q0-26 17-43t43-17h336q26 0 43 17t17 43v656q0 26-17 43t-43 17H312Zm-32-94v34q0 12 10 22t22 10h336q12 0 22-10t10-22v-34H280Zm0-28h400v-532H280v532Zm0-560h400v-34q0-12-10-22t-22-10H312q-12 0-22 10t-10 22v34Zm0 0v-66 66Zm0 588v66-66Z" />
+                </svg>
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                 
+                  id="sigup-phoneNumber"
+                  placeholder="Phone Number(Optional)"
+                  class="w-full border border-gray-200 h-10 rounded-md p-3 outline-blue-300" />
+                <span class="block text-blue-500 text-xs">Do not add the country prefix!</span>
+                <span class="pt-1 ms-2 siginError text-red-600 font-medium italic z-10 absolute left-0 top-9 siginSucess"></span>
+              </div>
+            </div>
+            <!-- password -->
+            <div class="input-with-errortag">
+              <div class="input-with-label relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="absolute bottom-2 right-4 p-1">
+                  <path
+                    d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>
+                </svg>
+                <input
+                  type="password"
+                  name="password"
+                  id="sigup-password"
+                  
+                  placeholder="Password"
+                  class="w-full border border-gray-200 h-10 rounded-md p-3 outline-blue-300" />
+                  <span class="pt-1 ms-2 siginError text-red-600 font-medium italic z-10 absolute left-0 top-9 siginSucess"></span>
+
+              </div>
+            </div>
+            <!-- repeat password -->
+            <div class="input-with-errortag">
+              <div class="input-with-label relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="absolute bottom-2 right-4 p-1">
+                  <path
+                    d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>
+                </svg>
+                <input
+                  type="password"
+                  name="password2"
+                  id="sigup-password2"
+                  
+                  placeholder="Repeat Password"
+                  class="w-full border border-gray-200 h-10 rounded-md p-3 outline-blue-300" />
+                  <span class="pt-1 ms-2 siginError text-red-600 font-medium italic z-10 absolute left-0 top-9 siginSucess"></span>
+
+              </div>
+            </div>
+            <!-- referral -->
+            <div class="input-with-errortag">
+              <div class="input-with-label relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 -960 960 960"
+                  class="absolute bottom-2 right-4 p-1"
+                  width="24">
+                  <path
+                    d="M93-192v-134q0-21 13.5-36.5T140-380h111q15 0 28.5 7t22.5 21q31 44 77.5 68T480-260q54 0 101-24t78-68q9-14 22.5-21t27.5-7h111q20 2 34 17.5t14 36.5v134H640v-99q-33 28-74 43.5T480-232q-44 0-84.5-15T321-290v98H93Zm387-148q-33 0-62.5-15.5T368-398q-13-18-30-31.5T301-451q31-22 82.5-32.5T480-494q45 0 96.5 10.5T660-451q-20 8-37 21.5T593-398q-19 28-49 43t-64 15ZM190-460q-38 0-66-28t-28-66q0-39 28-66.5t66-27.5q39 0 66.5 27.5T284-554q0 38-27.5 66T190-460Zm580 0q-38 0-66-28t-28-66q0-39 28-66.5t66-27.5q39 0 66.5 27.5T864-554q0 38-27.5 66T770-460ZM480-580q-38 0-66-28t-28-66q0-39 28-66.5t66-27.5q39 0 66.5 27.5T574-674q0 38-27.5 66T480-580Z" />
+                </svg>
+                <input
+                  type="text"
+                  name="referral"
+                  id="referral"
+                  placeholder="Referral Code (optional)"
+                  class="w-full border border-gray-200 h-10 rounded-md p-3 outline-blue-300" />
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <label for="how did you hear about us" class="font-semibold text-">
+                How Did You Hear About Us?</label
+              >
+              <select
+                id="how-did-you-know"
+            
+                name="how-did-you-know"
+                class="w-full border text-sm border-gray-200 h-10 rounded-md p-2 text-gray-400 outline-blue-300">
+                <option value="How Did You Hear About Us?">How Did You Hear About Us?</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Google">Google</option>
+                <option value="Through a friend">Through a friend</option>
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Others">Others</option>
+              </select>
+              <span class="pt-1 ms-2 siginError text-red-600 font-medium italic z-10 absolute left-0 top-9 siginSucess"></span>
+            </div>
+            <div class="space-y-3">
+              <label for="country" class="font-semibold text-">Country</label>
+              <select
+                id="country"
+                name="country"
+               
+                class="w-full border text-sm border-gray-200 h-10 rounded-md p-2  outline-blue-300">
+                <option value="" class="text-gray-400">Country</option>
+                <option value="AD">AD - Andorra (+376)</option>
+                <option value="AE">AE - United Arab Emirates (+971)</option>
+                <option value="AF">AF - Afghanistan (+93)</option>
+                <option value="AG">AG - Antigua And Barbuda (+1268)</option>
+                <option value="AI">AI - Anguilla (+1264)</option>
+                <option value="AL">AL - Albania (+355)</option>
+                <option value="AM">AM - Armenia (+374)</option>
+                <option value="AN">AN - Netherlands Antilles (+599)</option>
+                <option value="AO">AO - Angola (+244)</option>
+                <option value="AQ">AQ - Antarctica (+672)</option>
+                <option value="AR">AR - Argentina (+54)</option>
+                <option value="AS">AS - American Samoa (+1684)</option>
+                <option value="AT">AT - Austria (+43)</option>
+                <option value="AU">AU - Australia (+61)</option>
+                <option value="AW">AW - Aruba (+297)</option>
+                <option value="AZ">AZ - Azerbaijan (+994)</option>
+                <option value="BA">BA - Bosnia And Herzegovina (+387)</option>
+                <option value="BB">BB - Barbados (+1246)</option>
+                <option value="BD">BD - Bangladesh (+880)</option>
+                <option value="BE">BE - Belgium (+32)</option>
+                <option value="BF">BF - Burkina Faso (+226)</option>
+                <option value="BG">BG - Bulgaria (+359)</option>
+                <option value="BH">BH - Bahrain (+973)</option>
+                <option value="BI">BI - Burundi (+257)</option>
+                <option value="BJ">BJ - Benin (+229)</option>
+                <option value="BL">BL - Saint Barthelemy (+590)</option>
+                <option value="BM">BM - Bermuda (+1441)</option>
+                <option value="BN">BN - Brunei Darussalam (+673)</option>
+                <option value="BO">BO - Bolivia (+591)</option>
+                <option value="BR">BR - Brazil (+55)</option>
+                <option value="BS">BS - Bahamas (+1242)</option>
+                <option value="BT">BT - Bhutan (+975)</option>
+                <option value="BW">BW - Botswana (+267)</option>
+                <option value="BY">BY - Belarus (+375)</option>
+                <option value="BZ">BZ - Belize (+501)</option>
+                <option value="CA">CA - Canada (+1)</option>
+                <option value="CC">CC - Cocos (keeling) Islands (+61)</option>
+                <option value="CD">CD - Congo, The Democratic Republic Of The (+243)</option>
+                <option value="CF">CF - Central African Republic (+236)</option>
+                <option value="CG">CG - Congo (+242)</option>
+                <option value="CH">CH - Switzerland (+41)</option>
+                <option value="CI">CI - Cote D Ivoire (+225)</option>
+                <option value="CK">CK - Cook Islands (+682)</option>
+                <option value="CL">CL - Chile (+56)</option>
+                <option value="CM">CM - Cameroon (+237)</option>
+                <option value="CN">CN - China (+86)</option>
+                <option value="CO">CO - Colombia (+57)</option>
+                <option value="CR">CR - Costa Rica (+506)</option>
+                <option value="CU">CU - Cuba (+53)</option>
+                <option value="CV">CV - Cape Verde (+238)</option>
+                <option value="CX">CX - Christmas Island (+61)</option>
+                <option value="CY">CY - Cyprus (+357)</option>
+                <option value="CZ">CZ - Czech Republic (+420)</option>
+                <option value="DE">DE - Germany (+49)</option>
+                <option value="DJ">DJ - Djibouti (+253)</option>
+                <option value="DK">DK - Denmark (+45)</option>
+                <option value="DM">DM - Dominica (+1767)</option>
+                <option value="DO">DO - Dominican Republic (+1809)</option>
+                <option value="DZ">DZ - Algeria (+213)</option>
+                <option value="EC">EC - Ecuador (+593)</option>
+                <option value="EE">EE - Estonia (+372)</option>
+                <option value="EG">EG - Egypt (+20)</option>
+                <option value="ER">ER - Eritrea (+291)</option>
+                <option value="ES">ES - Spain (+34)</option>
+                <option value="ET">ET - Ethiopia (+251)</option>
+                <option value="FI">FI - Finland (+358)</option>
+                <option value="FJ">FJ - Fiji (+679)</option>
+                <option value="FK">FK - Falkland Islands (malvinas) (+500)</option>
+                <option value="FM">FM - Micronesia, Federated States Of (+691)</option>
+                <option value="FO">FO - Faroe Islands (+298)</option>
+                <option value="FR">FR - France (+33)</option>
+                <option value="GA">GA - Gabon (+241)</option>
+                <option value="GB">GB - United Kingdom (+44)</option>
+                <option value="GD">GD - Grenada (+1473)</option>
+                <option value="GE">GE - Georgia (+995)</option>
+                <option value="GH">GH - Ghana (+233)</option>
+                <option value="GI">GI - Gibraltar (+350)</option>
+                <option value="GL">GL - Greenland (+299)</option>
+                <option value="GM">GM - Gambia (+220)</option>
+                <option value="GN">GN - Guinea (+224)</option>
+                <option value="GQ">GQ - Equatorial Guinea (+240)</option>
+                <option value="GR">GR - Greece (+30)</option>
+                <option value="GT">GT - Guatemala (+502)</option>
+                <option value="GU">GU - Guam (+1671)</option>
+                <option value="GW">GW - Guinea-bissau (+245)</option>
+                <option value="GY">GY - Guyana (+592)</option>
+                <option value="HK">HK - Hong Kong (+852)</option>
+                <option value="HN">HN - Honduras (+504)</option>
+                <option value="HR">HR - Croatia (+385)</option>
+                <option value="HT">HT - Haiti (+509)</option>
+                <option value="HU">HU - Hungary (+36)</option>
+                <option value="ID">ID - Indonesia (+62)</option>
+                <option value="IE">IE - Ireland (+353)</option>
+                <option value="IL">IL - Israel (+972)</option>
+                <option value="IM">IM - Isle Of Man (+44)</option>
+                <option value="IN">IN - India (+91)</option>
+                <option value="IQ">IQ - Iraq (+964)</option>
+                <option value="IR">IR - Iran, Islamic Republic Of (+98)</option>
+                <option value="IS">IS - Iceland (+354)</option>
+                <option value="IT">IT - Italy (+39)</option>
+                <option value="JM">JM - Jamaica (+1876)</option>
+                <option value="JO">JO - Jordan (+962)</option>
+                <option value="JP">JP - Japan (+81)</option>
+                <option value="KE">KE - Kenya (+254)</option>
+                <option value="KG">KG - Kyrgyzstan (+996)</option>
+                <option value="KH">KH - Cambodia (+855)</option>
+                <option value="KI">KI - Kiribati (+686)</option>
+                <option value="KM">KM - Comoros (+269)</option>
+                <option value="KN">KN - Saint Kitts And Nevis (+1869)</option>
+                <option value="KP">KP - Korea Democratic Peoples Republic Of (+850)</option>
+                <option value="KR">KR - Korea Republic Of (+82)</option>
+                <option value="KW">KW - Kuwait (+965)</option>
+                <option value="KY">KY - Cayman Islands (+1345)</option>
+                <option value="KZ">KZ - Kazakstan (+7)</option>
+                <option value="LA">LA - Lao Peoples Democratic Republic (+856)</option>
+                <option value="LB">LB - Lebanon (+961)</option>
+                <option value="LC">LC - Saint Lucia (+1758)</option>
+                <option value="LI">LI - Liechtenstein (+423)</option>
+                <option value="LK">LK - Sri Lanka (+94)</option>
+                <option value="LR">LR - Liberia (+231)</option>
+                <option value="LS">LS - Lesotho (+266)</option>
+                <option value="LT">LT - Lithuania (+370)</option>
+                <option value="LU">LU - Luxembourg (+352)</option>
+                <option value="LV">LV - Latvia (+371)</option>
+                <option value="LY">LY - Libyan Arab Jamahiriya (+218)</option>
+                <option value="MA">MA - Morocco (+212)</option>
+                <option value="MC">MC - Monaco (+377)</option>
+                <option value="MD">MD - Moldova, Republic Of (+373)</option>
+                <option value="ME">ME - Montenegro (+382)</option>
+                <option value="MF">MF - Saint Martin (+1599)</option>
+                <option value="MG">MG - Madagascar (+261)</option>
+                <option value="MH">MH - Marshall Islands (+692)</option>
+                <option value="MK">MK - Macedonia, The Former Yugoslav Republic Of (+389)</option>
+                <option value="ML">ML - Mali (+223)</option>
+                <option value="MM">MM - Myanmar (+95)</option>
+                <option value="MN">MN - Mongolia (+976)</option>
+                <option value="MO">MO - Macau (+853)</option>
+                <option value="MP">MP - Northern Mariana Islands (+1670)</option>
+                <option value="MR">MR - Mauritania (+222)</option>
+                <option value="MS">MS - Montserrat (+1664)</option>
+                <option value="MT">MT - Malta (+356)</option>
+                <option value="MU">MU - Mauritius (+230)</option>
+                <option value="MV">MV - Maldives (+960)</option>
+                <option value="MW">MW - Malawi (+265)</option>
+                <option value="MX">MX - Mexico (+52)</option>
+                <option value="MY">MY - Malaysia (+60)</option>
+                <option value="MZ">MZ - Mozambique (+258)</option>
+                <option value="NA">NA - Namibia (+264)</option>
+                <option value="NC">NC - New Caledonia (+687)</option>
+                <option value="NE">NE - Niger (+227)</option>
+                <option value="NG">NG - Nigeria (+234)</option>
+                <option value="NI">NI - Nicaragua (+505)</option>
+                <option value="NL">NL - Netherlands (+31)</option>
+                <option value="NO">NO - Norway (+47)</option>
+                <option value="NP">NP - Nepal (+977)</option>
+                <option value="NR">NR - Nauru (+674)</option>
+                <option value="NU">NU - Niue (+683)</option>
+                <option value="NZ">NZ - New Zealand (+64)</option>
+                <option value="OM">OM - Oman (+968)</option>
+                <option value="PA">PA - Panama (+507)</option>
+                <option value="PE">PE - Peru (+51)</option>
+                <option value="PF">PF - French Polynesia (+689)</option>
+                <option value="PG">PG - Papua New Guinea (+675)</option>
+                <option value="PH">PH - Philippines (+63)</option>
+                <option value="PK">PK - Pakistan (+92)</option>
+                <option value="PL">PL - Poland (+48)</option>
+                <option value="PM">PM - Saint Pierre And Miquelon (+508)</option>
+                <option value="PN">PN - Pitcairn (+870)</option>
+                <option value="PR">PR - Puerto Rico (+1)</option>
+                <option value="PT">PT - Portugal (+351)</option>
+                <option value="PW">PW - Palau (+680)</option>
+                <option value="PY">PY - Paraguay (+595)</option>
+                <option value="QA">QA - Qatar (+974)</option>
+                <option value="RO">RO - Romania (+40)</option>
+                <option value="RS">RS - Serbia (+381)</option>
+                <option value="RU">RU - Russian Federation (+7)</option>
+                <option value="RW">RW - Rwanda (+250)</option>
+                <option value="SA">SA - Saudi Arabia (+966)</option>
+                <option value="SB">SB - Solomon Islands (+677)</option>
+                <option value="SC">SC - Seychelles (+248)</option>
+                <option value="SD">SD - Sudan (+249)</option>
+                <option value="SE">SE - Sweden (+46)</option>
+                <option value="SG">SG - Singapore (+65)</option>
+                <option value="SH">SH - Saint Helena (+290)</option>
+                <option value="SI">SI - Slovenia (+386)</option>
+                <option value="SK">SK - Slovakia (+421)</option>
+                <option value="SL">SL - Sierra Leone (+232)</option>
+                <option value="SM">SM - San Marino (+378)</option>
+                <option value="SN">SN - Senegal (+221)</option>
+                <option value="SO">SO - Somalia (+252)</option>
+                <option value="SR">SR - Suriname (+597)</option>
+                <option value="ST">ST - Sao Tome And Principe (+239)</option>
+                <option value="SV">SV - El Salvador (+503)</option>
+                <option value="SY">SY - Syrian Arab Republic (+963)</option>
+                <option value="SZ">SZ - Swaziland (+268)</option>
+                <option value="TC">TC - Turks And Caicos Islands (+1649)</option>
+                <option value="TD">TD - Chad (+235)</option>
+                <option value="TG">TG - Togo (+228)</option>
+                <option value="TH">TH - Thailand (+66)</option>
+                <option value="TJ">TJ - Tajikistan (+992)</option>
+                <option value="TK">TK - Tokelau (+690)</option>
+                <option value="TL">TL - Timor-leste (+670)</option>
+                <option value="TM">TM - Turkmenistan (+993)</option>
+                <option value="TN">TN - Tunisia (+216)</option>
+                <option value="TO">TO - Tonga (+676)</option>
+                <option value="TR">TR - Turkey (+90)</option>
+                <option value="TT">TT - Trinidad And Tobago (+1868)</option>
+                <option value="TV">TV - Tuvalu (+688)</option>
+                <option value="TW">TW - Taiwan, Province Of China (+886)</option>
+                <option value="TZ">TZ - Tanzania, United Republic Of (+255)</option>
+                <option value="UA">UA - Ukraine (+380)</option>
+                <option value="UG">UG - Uganda (+256)</option>
+                <option value="US">US - United States (+1)</option>
+                <option value="UY">UY - Uruguay (+598)</option>
+                <option value="UZ">UZ - Uzbekistan (+998)</option>
+                <option value="VA">VA - Holy See (vatican City State) (+39)</option>
+                <option value="VC">VC - Saint Vincent And The Grenadines (+1784)</option>
+                <option value="VE">VE - Venezuela (+58)</option>
+                <option value="VG">VG - Virgin Islands, British (+1284)</option>
+                <option value="VI">VI - Virgin Islands, U.s. (+1340)</option>
+                <option value="VN">VN - Viet Nam (+84)</option>
+                <option value="VU">VU - Vanuatu (+678)</option>
+                <option value="WF">WF - Wallis And Futuna (+681)</option>
+                <option value="WS">WS - Samoa (+685)</option>
+                <option value="XK">XK - Kosovo (+381)</option>
+                <option value="YE">YE - Yemen (+967)</option>
+                <option value="YT">YT - Mayotte (+262)</option>
+                <option value="ZA">ZA - South Africa (+27)</option>
+                <option value="ZM">ZM - Zambia (+260)</option>
+                <option value="ZW">ZW - Zimbabwe (+263)</option>
+              </select>
+              <span class="pt-1 ms-2 siginError text-red-600 font-medium italic z-10 absolute left-0 top-9 siginSucess"></span>
+
+            </div>
+            <div class="inline-flex items-center">
+                <input type="checkbox"  name="agree to presit term" id="signup-checkbox" class="h-4 w-4 mr-2">
+                <label for="checkbox" class="text-base">I Agree to <a href="" class="text-blue-500 text-sm">Prestmit Term</a></label>
+                <span class="pt-1 ms-2 siginError text-red-600 font-medium italic z-10 absolute left-0 top-9 siginSucess"></span>
+
+            </div>
+            <div>
+                <button type="submit" class="h-10 bg-blue-600 text-white font-semibold w-full rounded-md" id="signUpButton">Create Account</button>
+            </div>
+          </form>
+          <p class="mt-10 text-gray-400">Already have an account? <a href=""  class="text-blue-700 cursor-pointer font-semibold" id="signInLink">Sign in instead</a></p>
+        </section>
+       
+
+        <footer class="max-w-xs sm:max-w-full sm:w-4/12 border-t  bg-white  sm:ms-7 mx-auto mt-3 bottom-0 pb-2 block absolute " >
+           
+            <ul class="flex justify-start space-x-6 mb-2 pt-3">
+               <li class="text-sm hover:to-blue-500 text-gray-400"><a href="">Download App</a></li> 
+               <li class="text-sm hover:to-blue-500 text-gray-400"><a href="">Privacy Policy</a></li>
+               <li class="text-sm hover:to-blue-500 text-gray-400"><a href="">Terms</a></li>
+            </ul>
+            <p class="text-sm text-gray-400 ">© 2023 Prestmit.</p>
+        </footer>
+      </section>
+      <section class="sm:flex items-center hidden w-8/12" id="signup-image">
+        <img src="../images/login.94e4a9f7.webp" alt="" class="h-3/5 w-2/5 mx-auto" />
+      </section>
+     
+    </main>
+   
+  </body>
+</html>

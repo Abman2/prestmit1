@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prestmit Blog</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <!-- Include Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Include custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <script src="main.js" defer></script>
+  </head>
+  <body class="min-h-screen  mx-auto">
+    <nav class="sticky top-0 z-50 bg-gray-50 p-3.5 sm:p-2" aria-label="main">
+      <div class="sm:max-w-6xl mx-auto z-10 flex justify-between items-center">
+        <h1><img src="../images/prestdark.png" alt="Logo" class="mr-2 h-8 w-32" /></h1>
+
+        <!-- Displayed on larger screens -->
+        <ul class="hidden md:inline-flex space-x-7 mx-auto">
+          <li class="font-medium tracking-wide group">
+            <a href="" class="hover:text-blue-600 group"
+              >Gift Card <i class="fa fa-caret-down"></i
+            ></a>
+            <ul class="hidden absolute group-hover:block space-y-3 pt-3">
+              <li class="hover:text-blue-600"><a href="">Sell Gift Card</a></li>
+              <li class="hover:text-blue-600"><a href="" class="">Check Gift Card Balance</a></li>
+              <li class="hover:text-blue-600"><a href="">Gift Card Errors</a></li>
+            </ul>
+          </li>
+          <li class="font-medium tracking-widest group">
+            <a href="" class="hover:text-blue-600 group"
+              >Bitcoin <i class="fa fa-caret-down"></i
+            ></a>
+            <ul class="hidden absolute group-hover:block space-y-3 pt-3">
+              <li class="hover:text-blue-600"><a href="">Sell Bitcoin</a></li>
+            </ul>
+          </li>
+          <li class="font-medium tracking-widest hover:text-blue-600">
+            <a href="" class="">MMO</a>
+          </li>
+          <li class="font-medium tracking-widest group">
+            <a href="" class="hover:text-blue-600 group"
+              >Altcoins <i class="fa fa-caret-down"></i
+            ></a>
+            <ul class="hidden absolute group-hover:block space-y-3 pt-3">
+              <li class="hover:text-blue-600"><a href="">Litecoin</a></li>
+              <li class="hover:text-blue-600"><a href="" class="">Sell Litecoin</a></li>
+              <li class="hover:text-blue-600"><a href="">Dogecoin</a></li>
+              <li class="hover:text-blue-600"><a href="">Sell Dogecoin</a></li>
+            </ul>
+          </li>
+          <li class="font-medium tracking-widest group">
+            <a href="" class="hover:text-blue-600">Others <i class="fa fa-caret-down"></i></a>
+            <ul class="hidden group-hover:block bg-white pt-3 space-y-3 absolute">
+              <li class="hover:text-blue-600"><a href="">Airtime to Cash</a></li>
+              <li class="hover:text-blue-600"><a href="">News</a></li>
+              <li class="hover:text-blue-600"><a href=""></a>Rates</li>
+              <li class="hover:text-blue-600"><a href=""></a>Web3</li>
+              <li class="hover:text-blue-600"><a href=""></a>Sell USDT</li>
+              <li class="hover:text-blue-600"><a href="">NFTs</a></li>
+              <li class="hover:text-blue-600"><a href="">Prestmit Update</a></li>
+              <li class="hover:text-blue-600"><a href="">Refill</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="flex flex-col items-end justify-items-end mr-5">
+          <a href="signup.html"
+            ><button
+              class="rounded-md shadow-blue-300 shadow-sm p-2 w-28 h-12 sm:block hidden self-end border-blue-700 border font-semibold text-blue-700 tracking-wide">
+              Log In
+            </button></a
+          >
+        </div>
+        <div class="flex flex-col items-end justify-items-end">
+          <a href="signup.html"
+            ><button
+              class="rounded-md shadow-blue-300 shadow-sm w-44 h-12 sm:block hidden self-end bg-blue-700 font-semibold text-white tracking-wide">
+              Sign up for free
+            </button></a
+          >
+        </div>
+        <div class="flex items-center">
+          <button id="menuBtn" class="bg-none block lg:hidden">
+            <i class="fas fa-bars text-black text-lg hambur"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Displayed on mobile -->
+      <ul id="mobileMenu" class="hidden lg:hidden justify-items-end z-50 space-y-3 pt-5">
+        <li class="font-medium tracking-wide relative group">
+          <p href="" class="hover:text-blue-600 group">
+            Gift Card <i class="fa fa-caret-down"></i>
+          </p>
+          <ul class="hidden absolute group-hover:block space-y-3 pt-3 left-28 top-0 bg-white px-5">
+            <li class="hover:text-blue-600"><a href="">Sell Gift Card</a></li>
+            <li class="hover:text-blue-600"><a href="" class="">Check Gift Card Balance</a></li>
+            <li class="hover:text-blue-600"><a href="">Gift Card Errors</a></li>
+          </ul>
+        </li>
+        <li class="font-medium tracking-widest relative group">
+          <p href="" class="hover:text-blue-600 group">Bitcoin <i class="fa fa-caret-down"></i></p>
+          <ul class="hidden absolute group-hover:block space-y-3 pt-3 left-20 bg-white px-5">
+            <li class="hover:text-blue-600"><a href="">Sell Bitcoin</a></li>
+          </ul>
+        </li>
+        <li class="font-medium tracking-widest hover:text-blue-600">
+          <a href="" class="">MMO</a>
+        </li>
+        <li class="font-medium tracking-widest relative group">
+          <p href="" class="hover:text-blue-600 group">Altcoins <i class="fa fa-caret-down"></i></p>
+          <ul class="hidden absolute group-hover:block space-y-3 pt-3 left-24 bg-white px-5 top-5">
+            <li class="hover:text-blue-600"><a href="">Litecoin</a></li>
+            <li class="hover:text-blue-600"><a href="" class="">Sell Litecoin</a></li>
+            <li class="hover:text-blue-600"><a href="">Dogecoin</a></li>
+            <li class="hover:text-blue-600"><a href="">Sell Dogecoin</a></li>
+          </ul>
+        </li>
+        <li class="font-medium tracking-widest group">
+          <p href="" class="hover:text-blue-600">Others <i class="fa fa-caret-down"></i></p>
+          <ul class="hidden group-hover:block bg-white pt-3 space-y-3 absolute left-20 px-5">
+            <li class="hover:text-blue-600"><a href="">Airtime to Cash</a></li>
+            <li class="hover:text-blue-600"><a href="">News</a></li>
+            <li class="hover:text-blue-600"><a href=""></a>Rates</li>
+            <li class="hover:text-blue-600"><a href=""></a>Web3</li>
+            <li class="hover:text-blue-600"><a href=""></a>Sell USDT</li>
+            <li class="hover:text-blue-600"><a href="">NFTs</a></li>
+            <li class="hover:text-blue-600"><a href="">Prestmit Update</a></li>
+            <li class="hover:text-blue-600"><a href="">Refill</a></li>
+          </ul>
+        </li>
+        <div class="inline-flex space-x-5">
+          <a href="signup.html" class=""
+            ><button
+              class="uppercase shadow-blue-300 shadow-sm border border-blue-700 text-blue-700 font-semibold rounded-md p-2">
+              Log In
+            </button></a
+          >
+          <a href="signup.html" class=""
+            ><button
+              class="uppercase shadow-blue-300 shadow-sm bg-blue-700 text-white font-semibold rounded-md p-2">
+              Sign up for free
+            </button></a
+          >
+        </div>
+      </ul>
+    </nav>
+    <header id="bheader" class="bg-blue-950 text-white py-28 px-3 max-w-full mx-a">
+      <article class="sm:max-w-6xl max-w-sm mx-auto">
+        <h1 class="text-5xl font-bold mb-5">Prestmit Blog</h1>
+        <p class="sm:text-xl mb-3">
+          Learn about cryptocurrencies, gift cards, finance and the world of digital payments.
+        </p>
+        <form action="">
+          <input
+            type="email"
+            name=""
+            id=""
+            class="block h-12 rounded-xl p-3 sm:w-2/5"
+            placeholder="Enter your Email:" />
+          <button type="submit" class="bg-blue-700 p-4 rounded-lg my-3">Subscribe!</button>
+        </form>
+        <p class="font-semibold">Worry not, we will never spam your inbox...</p>
+      </article>
+    </header>
+    <main>
+      <nav
+        aria-label="sub"
+        class="space-x-10 p-5 text-sm sm:max-w-6xl max-w-sm mx-auto tracking-wide border-b border-gray-600 overflow-scroll sm:overflow-hidden inline-flex">
+        <a href="" class="uppercase hover:text-blue-600 text-blue-600">all</a>
+        <a href="" class="uppercase hover:text-blue-600">gift cards</a>
+        <a href="" class="uppercase hover:text-blue-600">general</a>
+        <a href="" class="uppercase hover:text-blue-600">bitcoin</a>
+        <a href="" class="uppercase hover:text-blue-600">presmit update</a>
+        <a href="" class="uppercase hover:text-blue-600">altcoins</a>
+        <a href="" class="uppercase hover:text-blue-600">nfts</a>
+        <a href="" class="uppercase hover:text-blue-600">usdt</a>
+      </nav>
+      <section id="bsection1" class="sm:max-w-6xl max-w-sm  mx-auto flex sm:flex-row flex-col gap-x-10 py-16">
+        <section id="bmainblog" class="sm:w-8/12 sm:grid sm:grid-cols-2   gap-x-7 h-fit gap-y-10 ">
+          <article class="flex flex-col space-y-10 sm:space-y-4 rounded-xl ">
+            <div class=" rounded-xl ">
+              <img src="../images/Blog-21.webp" alt="" class="rounded-xl " />
+            </div> 
+            <div class="space-y-2">
+              <a href="" class="block text-blue-600 text-sm sm:mt-5 ">Gift Cards</a>
+              <a href="" class="hover:text-blue-500 block text-2xl font-bold">
+                Top 7 Best Apps to Earn Gift Cards on Android & iOS in 2023
+          </a>
+            </div>
+          </article>
+          <article class="flex flex-col space-y-10 sm:space-y-4 rounded-xl ">
+            <div class=" rounded-xl ">
+              <img src="../images/Blog-25.webp" alt="" class="rounded-xl" />
+            </div>
+            <div class=" space-y-2 ">
+              <a href="" class="block text-blue-600 text-sm sm:mt-5 ">Gift Cards</a>
+              <a href="" class="hover:text-blue-500 block text-2xl font-bold">
+                Top 5 Gift Cards Options in France
+          </a>
+            </div>
+          </article>
+          <article class="flex flex-col space-y-10 sm:space-y-5 rounded-xl">
+            <div class=" rounded-xl ">
+              <img src="../images/Image-1-6.webp" alt="" class="rounded-xl" />
+            </div>
+            <div class=" space-y-2 ">
+              <a href="" class="block text-blue-600 sm:mt-5 text-sm  ">General</a>
+              <a href="" class="hover:text-blue-500 block text-2xl font-bold">
+                Is PST.NET A Good Virtual Card Provider
+          </a>
+            </div>
+          </article>
+          <article class="flex flex-col space-y-10 sm:space-y-5 rounded-xl">
+            <div class=" rounded-xl ">
+              <img src="../images/Blog-22.webp" alt="" class="rounded-xl" />
+            </div>
+            <div class=" space-y-2  ">
+              <a href="" class="block text-blue-600 sm:mt-5 text-sm   ">General</a>
+              <a href="" class="hover:text-blue-600 block text-2xl font-bold">
+                    All You Need to Know About Footlocker Gift Card
+              </a>
+            </div>
+          </article>
+          <article class="flex flex-col space-y-10 sm:space-y-5 rounded-xl">
+            <div class="h-1/2 rounded-xl ">
+              <img src="../images/WebBanner-85-2.webp" alt="" class="rounded-xl" />
+            </div>
+            <div class="h-1/2 space-y-2  ">
+              <a href="" class="block text-blue-600 sm:mt-5 text-sm   ">General</a>
+              <a href="" class="hover:text-blue-600 block text-2xl font-bold">
+                Top 15 Best Crypto News Websites in 2023
+              </a>
+            </div>
+          </article>
+          <article class="flex flex-col space-y-10 sm:space-y-5 rounded-xl">
+            <div class="h-1/2 rounded-xl ">
+              <img src="../images/WebBanner-87.webp" alt="" class="rounded-xl" />
+            </div>
+            <div class="h-1/2 space-y-2  ">
+              <a href="" class="block text-blue-600 sm:mt-5 text-sm   ">USDT</a>
+              <a href="" class="hover:text-blue-600 block text-2xl font-bold">
+                5 Best Mobile Wallets To Store USDT On The Go
+              </a>
+            </div>
+          </article>
+          <ul class="flex space-x-2 justify-center mt-5 pt-10 col-span-2 ">
+            <li>
+                <a href="#" class="px-4 py-2 bg-blue-700 text-white rounded-l-md">Previous</a>
+            </li>
+            <li><a href="#" class="px-4 py-2 bg-blue-200 text-blue-800">1</a></li>
+            <li><a href="#" class="px-4 py-2 bg-blue-200 text-blue-800">2</a></li>
+            <li><a href="#" class="px-4 py-2 bg-blue-200 text-blue-800">3</a></li>
+            <li>
+                <a href="#" class="px-4 py-2 bg-blue-700 text-white rounded-r-md">Next</a>
+            </li>
+        </ul>
+        </section>
+        <aside id="barticle" class="sm:w-4/12 max-w-full  mx-auto py-20 space-y-7 ">
+            <article class="border rounded-xl">
+                <img src="../images/prestmit-ad-banner.webp" alt="" class="rounded-xl">
+            </article>
+            <article class="border rounded-xl h-32 flex items-center justify-center mx-auto" id="search-4" >
+            <form role="search" method="get" id="search-form" class=" mx-auto inline-flex max-w-sm sm:max-w-md relative" action="https://prestmit.com/blog/">
+                    <i class="fa-solid fa-magnifying-glass absolute text-xl text-slate-300 left-3 top-2"></i>
+                    <input type="text" value="" name="s" id="s" placeholder="Search..." class="border py-2.5 w-44  ps-10 rounded-xl mr-2.5">
+                    <input type="submit" id="searchsubmit" value="Search" class="bg-blue-700 text-white text-sm p-3 px-4 rounded-lg"></form>
+            </article>
+            <article id="recent" class="rounded-xl border p-7 mx-auto ">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-950">Recent Post</h3>
+                <ul class="underline text-slate-500 tracking-wide space-y-5">
+                    <li class="hover:text-blue-600"><a href="">Top 7 Best Apps to Earn Gift Cards on Android & iOS in 2023</a></li>
+                    <li class="hover:text-blue-600"><a href="">Top 5 Gift Cards Options in France</a></li>
+                    <li class="hover:text-blue-600"><a href="">Is PST.NET A Good Virtual Card Provider</a></li>
+                    <li class="hover:text-blue-600"><a href="">All You Need to Know About Footlocker Gift Card</a></li>
+                    <li class="hover:text-blue-600"><a href="">Top 15 Best Crypto News Websites in 2023</a></li>
+                    <li class="hover:text-blue-600"><a href="">5 Best Mobile Wallets To Store USDT On The Go</a></li>
+                    <li class="hover:text-blue-600"><a href="">About Crypto Fear And Greed Index – The Bitcoin Sentiment Tracker</a></li>
+                    <li class="hover:text-blue-600"><a href="">How to Stay Safe When Using Binance P2P Exchange</a></li>
+                    <li class="hover:text-blue-600"><a href="">How to Sell Bitcoin on Peer-to-Peer (P2P) Exchanges: A Comprehensive Guide</a></li>
+                    <li class="hover:text-blue-600"><a href="">How To Sell Gift Cards On Peer-to-Peer (P2P) Exchanges: A Detailed Guide</a></li>
+                </ul>
+            </article>
+            <article id="categories" class="rounded-xl border p-7 ">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-950">Categories</h3>
+                <ul class=" text-slate-500 tracking-wide space-y-5">
+                    <li class="hover:text-blue-600"><a href="">Airtime to Cash</a></li>
+                    <li class="hover:text-blue-600"><a href="">Altcoin</a></li>
+                    <li class="hover:text-blue-600"><a href="">Bitcoin</a></li>
+                    <li class="hover:text-blue-600"><a href="">Check Gift Card Balance</a></li>
+                    <li class="hover:text-blue-600"><a href="">Crypto Wallet</a></li>
+                    <li class="hover:text-blue-600"><a href="">Dogecoin</a></li>
+                    <li class="hover:text-blue-600"><a href="">General</a></li>
+                    <li class="hover:text-blue-600"><a href="">Gift Card Errors</a></li>
+                    <li class="hover:text-blue-600"><a href="">Gift Card</a></li>
+                    <li class="hover:text-blue-600"><a href="">Litecoin</a></li>
+                    <li class="hover:text-blue-600"><a href="">Make Money Online</a></li>
+                    <li class="hover:text-blue-600"><a href="">News</a></li>
+                    <li class="hover:text-blue-600"><a href="">NFTs</a></li>
+                    <li class="hover:text-blue-600"><a href="">Presmit Update</a></li>
+                    <li class="hover:text-blue-600"><a href="">Refill</a></li>
+                    <li class="hover:text-blue-600"><a href="">USDT</a></li>
+                    <li class="hover:text-blue-600"><a href="">Web3</a></li>
+                </ul>
+                
+            </article>
+            <article id="tags" class="rounded-xl border p-7">
+                <h3 class="text-xl font-semibold mb-4 text-blue-950">Tag Cloud</h3>
+               <ul class=" text-slate-500 tracking-wide ">
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Altcoin</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Amazon</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Amex gift card</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Best App for Gift Card in Ghana</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Best Crypto Exchange Nigeria</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">best crypto exchange platform</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">best site to buy and sell gift card</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Binance</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">bitcoin</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Bitcoin investment</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Bitcoin investment</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Bitcoin price</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Bitcoins</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href=""> Blockchain</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href=""> Cryptocurrencies</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">cryptocurrency</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Crypto trading</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">dogecoin</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">ethreum</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">gift card</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">gift card balance checker</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">gift cards</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">google play gift card</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Google Play Store</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">how to buy and sell gift cards in nigeria</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">iTunes gift card</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Litecoin </a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href=""> Metaverse </a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">NFT</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">NFTs</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Paxful</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">sell amazon gift card</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">sell gift card</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">sell gift cards</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Shiba Inu</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">STEAM GIFT CARD </a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">steam gift cards </a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">Tether</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">USDT</a></li>
+                <li class="rounded-3xl bg-slate-300 border-slate-100 border inline-block px-2 py-1 text-xs m-1"><a href="">where to sell gift cards in Nigeria</a></li>
+
+
+               </ul>
+            </article>
+        </aside>
+      </section>
+      <section id="bsection4" class="flex rounded-xl sm:h-fit md:h-screen px-2  mb-10 flex-col-reverse sm:flex-row max-w-6xl mx-auto bg-blue-900">
+        <article class="sm:w-1/2 sm:max-w-lg max-w-sm mx-auto sm:pt-20 pt-10">
+            <img src="../images/sell-area-img.svg" alt="" class="h-full">
+        </article>
+        <article class="text-white sm:w-1/2 sm:pt-0 pt-10 sm:max-w-lg max-w-md mx-auto space-y-5  flex flex-col items-center justify-center">
+            <div class="space-y-6">
+                <h1 class="sm:text-5xl text-3xl font-bold tracking-wide">The Best Digital Trading Platform in Africa</h1>
+            <p class="sm:text-xl font-medium tracking-wide line-clamp-5">A user-centric platform designed for YOU to buy and sell various digital assets, available for both web and mobile users. Get started today.</p>
+            <p class="sm:text-xl  border-dashed border-b-4 border-white pb-5"><a href="">Learn more</a> <i class=" fa fa-arrow-right ms-1"></i></p>
+            <h3 class="sm:text-2xl text-left">Get the app now:</h3>
+            <div class="flex items-center justify-start space-x-6">
+                <button
+                  class="bg-blue-950 text-white font-bold border border-blue-950  text-lg rounded-xl w-44 h-14">
+                  <i class="fa-brands fa-apple mr-2"></i>App Store
+                </button>
+                <button
+                  class="bg-blue-950 border-blue-950 border text-white text-lg  rounded-xl w-44 h-14">
+                  <i class="fa-brands fa-google-play mr-2"></i>Play Store
+                </button>
+              </div>
+            </div>
+           <div>
+           
+           </div>
+        </article>
+      </section>
+    </main>
+    <!-- FOOTER  -->
+     <footer class="mx-auto bg-blue-950 ">
+      <footer class="mx-auto max-w-sm sm:max-w-6xl text-gray-400">
+        <section id="footer-1" class="pb-10 flex justify-between sm:items-center pt-16  sm:flex-row flex-col sm:max-w-5xl sm:pt-16 sm:pb-20">
+          <div class="space-y-5 ">
+            <h1 class="text-4xl font-bold text-white mb-3 ">400K+ Customers</h1>
+          <p class="max-w-lg">  Since launching, over 400,000 people have used Prestmit to buy and sell crypto, gift cards, airtime and other digital assets. Join them.</p>
+          </div>
+          <div>
+            <button
+            class="mt-10 sm:mt-0 bg-blue-700 text-white  border border-blue-700 rounded-lg w-52 h-12 text-lg">
+            Sign up for free
+          </button>
+          </div>
+        </section>
+        <section class="grid sm:grid-cols-4   gap-x-5">
+          <article>
+            <h1 class="mb-10"><img src="../images/prestwhite.png" alt="Logo" class="mr-2 h-7 w-28" /></h1>
+              <p class="leading-7">
+                At Prestmit, we believe everyone deserves the chance to gain, profit, and benefit from modern digital assets, which drives us to help those most in need.
+<br><br>
+Prestmit is available for both web and mobile users. Feel free to reach out to us and our team will help resolve your issue quickly.
+
+
+              </p>
+              <br>
+              <address >Email: <a class="text-blue-500">Help@prestmit.com</a></address>
+              <div class="flex gap-x-2 mt-3 mb-7">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" rounded-md border p-1 border-gray-400 fea-social"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rounded-md border p-1 border-gray-400 icon-sm fea-social"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rounded-md border p-1 border-gray-400 fea-social"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+              </div>
+
+          </article>
+          <article class="mb-5 sm:mb-0">
+            <h2 class="text-xl text-white mb-10">Products</h2>
+            <ul class="space-y-4 ">
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Buy Gift Cards</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2 "></i><a href="" class="text-lg" >Homepage</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Gift Cards - Naira</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Gift Cards - Cedis</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" > Gift Card to Bitcoin</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Gift Card to USDT</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Bitcoin in Nigeria</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Bitcoin in Ghana</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Bitcoin News</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Tether (USDT) Wallet</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Dogecoin</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Litecoin</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Airtime to Cash</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >NFTs</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Promo Codes</a></li>
+
+
+            </ul>
+          </article>
+          <article class="mb-5 sm:mb-0">
+            <h2 class="text-xl text-white mb-10">Useful Links</h2>
+            <ul class="space-y-4 ">
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Download Android App</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""> Download IPhone App</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">How to Trade</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""> Current Rates</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""> Best Gift Cards</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Check Balance</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Support & FAQs</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>FAQs</li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Terms Of Use</li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Privacy Policies</li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>We Are Hiring</li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Blog</li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Contact Us</li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Platform Status</li>
+              
+
+            </ul>
+          </article>
+          <article>
+            <h2 class="text-xl text-white mb-10">Gift Cards</h2>
+            <ul class="space-y-4 ">
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Amazon Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Spar Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell AMEX Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Razer Gold Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Apple Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Shoprite Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell eBay Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Google Play Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Nordstrom Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Sephora Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Steam Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Vanilla Gift Card</a></li>
+
+            </ul>
+          </article>
+        </section>
+       
+      </footer>
+      <hr class="container pb-5 mt-5 text-gray-400 " >
+        <section class="sm:max-w-6xl max-w-md flex flex-col space-y-5 sm:space-y-0 sm:flex-row items-center justify-between mx-auto py-3 sm:py-8">
+          <div>
+            <span class="text-gray-400">© 2023 Prestmit. All Rights Reserved.</span>
+          </div>
+          <div class="flex gap-x-7 text-gray-50">
+            <a href="" class="text-4xl text-slate-50"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="text-4xl"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="" class="text-4xl"><i class="fa-brands fa-facebook"></i></a>
+           
+          </div>
+
+        </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promo Contact</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <!-- Include Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <script src="main.js" defer></script>
+  </head>
+  <body class="min-h-screen xl:container mx-auto">
+    <nav class="sticky top-0 z-50 bg-gray-50 p-3.5 sm:p-2 ">
+      <div class="sm:max-w-6xl mx-auto z-10 flex justify-between items-center">
+        <h1><img src="../images/prestdark.png" alt="Logo" class="mr-2 h-7 w-28" /></h1>
+
+        <!-- Displayed on larger screens -->
+        <div class="hidden md:block space-x-12 text-gray-800 uppercase text-sm   mx-auto">
+          <a href="index.html" class=" font-semibold  tracking-widest hover:text-blue-600 active:text-blue-600  ">Home</a>
+          <a href="promocode.html" class=" font-semibold  tracking-widest hover:text-blue-600   ">promo codes</a>
+          <a href="contact.html" class=" font-semibold  tracking-widest hover:text-blue-600 text-blue-600">contact</a>
+          <a href="blog.html" class=" font-semibold  tracking-widest hover:text-blue-600 active:text-blue-600 ">blog</a>
+        </div>
+        <div class="flex flex-col items-end justify-items-end">
+          <a href="signup.html"><button
+            class="rounded-md  shadow-blue-300 shadow-sm w-40 h-10 sm:block hidden self-end bg-blue-700 uppercase text-sm font-semibold text-white tracking-wide">
+            Register/login 
+          </button></a>
+        </div>
+        <div class="flex items-center">
+          <button id="menuBtn" class="bg-none block lg:hidden">
+            <i class="fas fa-bars text-black text-lg hambur"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Displayed on mobile -->
+      <div id="mobileMenu" class="hidden lg:hidden justify-items-end z-50">
+        <div class="flex flex-col items-center text-gray-400 uppercase bg-slate-50 space-y-5">
+          <a href="index.html" class="  py-2 font-semibold hover:text-blue-600">Home</a>
+          <a href="promocode.html" class=" font-semibold hover:text-blue-600">promo codes</a>
+          <a href="contact.html" class=" font-semibold hover:text-blue-600 text-blue-600">contact</a>
+          <a href="blog.html" class=" font-semibold hover:text-blue-600">blog</a>
+          <a href="signup.html"><button class=" uppercase shadow-blue-300 shadow-sm bg-blue-700 text-white font-semibold  rounded-md p-2 ">register / login</button></a>
+
+        </div>
+      </div>
+    </nav>
+    <main>
+        <header class="h-96 max-w-full grid place-items-center bg-slate-100" id="pheader1">
+            <h1 class="text-4xl    text-center">Contact Us</h1>
+          </header>
+          <section id="csection1" class="flex flex-col  font-semibold z-20 relative -top-5  text-slate-700 tracking-wider text-base">
+            <div class="inline-block border shadow-sm shadow-slate-100 px-6 bg-white border-slate-100  mx-auto py-2 rounded-lg">
+                <ol class="list-none p-0 inline-flex">
+                  <li class="flex items-center">
+                    <a href="#" class=" hover:text-blue-600">Presmit</a>
+                    <i class="fa-solid fa-chevron-right mx-2 fa-xs"></i>
+                  </li>
+                  <li class="flex items-center">
+                    <a href="#" class=" hover:text-blue-600">Contact</a>
+                    <i class="fa-solid fa-chevron-right mx-2 fa-xs"></i>
+                  </li>
+                  <li class="flex items-center text-blue-600 ">
+                    <span class="">Contact Info</span>
+                  </li>
+                </ol>
+              </div>
+          </section>
+          <section id="csection2" class="flex flex-col sm:flex-row py-16">
+            <article class="sm:w-1/2 flex text-center h-56  ">
+                <div class="max-w-sm mx-auto flex flex-col items-center justify-between space-y-3">
+                    <div class="h-2/5">
+                        <img src="../images/bitcoin.svg" alt="" class="h-full">
+                    </div>
+                    <div class="space-y-3 h-3/5">
+                        <h4 class="text-xl font-semibold">Phone</h4>
+                        <p class="text-slate-400">You can call us at anytime</p>
+                        <a href="" class="text-blue-600 block tracking-wider">+2347026290389</a>
+                    </div>
+                </div>
+            </article>
+            <article class="sm:w-1/2 flex text-center h-56  ">
+                <div class="max-w-sm mx-auto flex flex-col items-center justify-between space-y-3">
+                    <div class="h-2/5">
+                        <img src="../images/Email.svg" alt="" class="h-full">
+                    </div>
+                    <div class="space-y-3 h-3/5">
+                        <h4 class="text-xl font-semibold">Email</h4>
+                        <p class="text-slate-400">Send us a detailed message.</p>
+                        <a href="" class="text-blue-600 block tracking-wider">help@prestmit.com</a>
+                    </div>
+                </div>
+            </article>
+          </section>
+          <section id="csection3" class="flex flex-col-reverse  mx-auto  sm:pt-10 pb-10 gap-y-10  sm:flex-row max-w-sm sm:max-w-6xl gap-x-20">
+            <article class="sm:w-1/2 sm:p-3">
+                <form action="" class="space-y-7  mx-auto border border-slate-100 shadow-md shadow-slate-200 rounded-xl  p-8">
+                    <h2 class="text-2xl">Get In Touch !</h2>
+                    <div class="gap-x-5 flex flex-col sm:flex-row gap-y-7 sm:items-center">
+                        <div class="sm:w-1/2">
+                            <label for="name">Your Name <span class="text-red-600">*</span></label>
+                            <input type="text" name="name" id="cname" placeholder="Your Name" class="block p-2 border rounded-md h-10 w-full text-sm">
+                        </div>
+                        <div class="sm:w-1/2">
+                            <label for="email">Your Email <span class="text-red-600">*</span></label>
+                            <input type="text" name="email" id="cemail" placeholder="Your Email" class="block p-2 border rounded-md h-10 w-full text-sm">
+                        </div>
+                    </div>
+                    <div class="">
+                        <label for="Subject">Subject <span class="text-red-600">*</span></label>
+                        <input type="text" name="csubject" id="csubject" placeholder="Subject"  class="p-2 border rounded-md block h-10 w-full text-sm">
+                    </div>
+                    <div>
+                        <label for="ccomment">Comments <span class="text-red-600">*</span></label>
+                        <textarea name="comment" id=""  placeholder="" class="p-3 w-full h-32 text-slate-400 border rounded-md block text-sm">Your Message: </textarea>
+                    </div>
+                        
+                    <button type="submit" class="text-center bg-blue-700 rounded-md font-semibold w-full h-10    text-gray-50">
+                        Send Message
+                      </button>
+                   
+
+                </form>
+            </article>
+            <article class="sm:w-1/2 flex items-center">
+                <div class="max-w-5xl mx-auto ">
+                    <img src="../images/contact.webp" alt="">
+                </div>
+            </article >
+          </section>
+    </main>
+     <!-- FOOTER  -->
+     <footer class=" mx-auto bg-blue-950 ">
+        <footer class="mx-auto max-w-sm sm:max-w-6xl text-gray-400">
+          <section id="footer-1" class="py-10 flex justify-between sm:items-center sm:flex-row flex-col sm:max-w-5xl sm:pt-36 sm:pb-20">
+            <div>
+              <h1 class="text-2xl text-white mb-3 ">Download Our App Now !</h1>
+            <p>Install the Prestmit app to trade on-the-go, anywhere, anytime</p>
+            </div>
+            <div>
+              <button
+              class="mt-7 sm:mt-0 bg-blue-700 text-white  border border-blue-700 rounded-md w-44 h-11">
+              Download Now
+            </button>
+            </div>
+          </section>
+          <section class="grid sm:grid-cols-4   gap-x-5">
+            <article>
+              <h1 class="mb-10"><img src="../images/prestwhite.png" alt="Logo" class="mr-2 h-7 w-28" /></h1>
+                <p class="leading-7">
+                  At Prestmit, we believe everyone deserves the chance to gain, profit, and benefit from modern digital assets, which drives us to help those most in need.
+  <br><br>
+  Prestmit is available for both web and mobile users. Feel free to reach out to us and our team will help resolve your issue quickly.
+  
+  
+                </p>
+                <br>
+                <address >Email: <a class="text-blue-500">Help@prestmit.com</a></address>
+                <div class="flex gap-x-2 mt-3 mb-7">
+                  <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" rounded-md border p-1 border-gray-400 fea-social"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                  <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rounded-md border p-1 border-gray-400 icon-sm fea-social"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                  <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rounded-md border p-1 border-gray-400 fea-social"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                </div>
+  
+            </article>
+            <article class="mb-5 sm:mb-0">
+              <h2 class="text-xl text-white mb-10">Products</h2>
+              <ul class="space-y-4 ">
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Buy Gift Cards</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2 "></i><a href="" class="text-lg" >Homepage</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Gift Cards - Naira</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Gift Cards - Cedis</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" > Gift Card to Bitcoin</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Gift Card to USDT</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Bitcoin in Nigeria</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Bitcoin in Ghana</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Bitcoin News</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Tether (USDT) Wallet</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Dogecoin</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Litecoin</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Airtime to Cash</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >NFTs</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Promo Codes</a></li>
+  
+  
+              </ul>
+            </article>
+            <article class="mb-5 sm:mb-0">
+              <h2 class="text-xl text-white mb-10">Useful Links</h2>
+              <ul class="space-y-4 ">
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Download Android App</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""> Download IPhone App</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">How to Trade</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""> Current Rates</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""> Best Gift Cards</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Check Balance</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Support & FAQs</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>FAQs</li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Terms Of Use</li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Privacy Policies</li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>We Are Hiring</li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Blog</li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Contact Us</li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Platform Status</li>
+                
+  
+              </ul>
+            </article>
+            <article>
+              <h2 class="text-xl text-white mb-10">Gift Cards</h2>
+              <ul class="space-y-4 ">
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Amazon Gift Card</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Spar Gift Card</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell AMEX Gift Card</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Razer Gold Gift Card</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Apple Gift Card</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Shoprite Gift Card</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell eBay Gift Card</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Google Play Gift Card</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Nordstrom Gift Card</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Sephora Gift Card</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Steam Gift Card</a></li>
+                <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Vanilla Gift Card</a></li>
+  
+              </ul>
+            </article>
+          </section>
+         
+        </footer>
+        <hr class="container pb-5 mt-5 text-gray-400 " >
+          <section class="sm:max-w-6xl max-w-md flex flex-col space-y-5 sm:space-y-0 sm:flex-row items-center justify-between mx-auto py-8">
+            <div>
+              <span class="text-gray-400">© 2023 Prestmit. All Rights Reserved.</span>
+            </div>
+            <div class="flex gap-x-1">
+              <a href=""><img src="../images/oie_27165115wiIT9M1i.png" alt=""></a>
+              <a href=""><img src="../images/oie_271651496Lb7oE9C.png" alt=""></a>
+              <a href=""><img src="../images/oie_27165225rE84SkuM.png" alt=""></a>
+              <a href=""><img src="../images/oie_27165249JYwAQ8Ct.png" alt=""></a>
+              <a href=""><img src="../images/oie_27165264bFhrtDI.png" alt=""></a>
+            </div>
+  
+          </section>
+      </footer>
+  </body>

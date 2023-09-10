@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promo Code</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <!-- Include Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <script src="main.js" defer></script>
+  </head>
+  <body class="min-h-screen xl:container mx-auto">
+    <nav class="sticky top-0 z-50 bg-gray-50 p-3.5 sm:p-2 ">
+      <div class="sm:max-w-6xl mx-auto z-10 flex justify-between items-center">
+        <h1><img src="../images/prestdark.png" alt="Logo" class="mr-2 h-7 w-28" /></h1>
+
+        <!-- Displayed on larger screens -->
+        <div class="hidden md:block space-x-12 text-gray-800 uppercase text-sm   mx-auto">
+          <a href="index.html" class=" font-semibold  tracking-widest hover:text-blue-600 active:text-blue-600  ">Home</a>
+          <a href="promocode.html" class=" font-semibold  tracking-widest hover:text-blue-600 text-blue-600 active:text-blue-600 ">promo codes</a>
+          <a href="contact.html" class=" font-semibold  tracking-widest hover:text-blue-600 active:text-blue-600 ">contact</a>
+          <a href="blog.html" class=" font-semibold  tracking-widest hover:text-blue-600 active:text-blue-600 ">blog</a>
+        </div>
+        <div class="flex flex-col items-end justify-items-end">
+         <a href="signup.html">
+          <button
+          class="rounded-md shadow-blue-300 shadow-sm w-40 h-10 sm:block hidden self-end bg-blue-700 uppercase text-sm font-semibold text-white tracking-wide">
+          Register/login 
+        </button>
+         </a>
+        </div>
+        <div class="flex items-center">
+          <button id="menuBtn" class="bg-none block lg:hidden">
+            <i class="fas fa-bars text-black text-lg hambur"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Displayed on mobile -->
+      <div id="mobileMenu" class="hidden lg:hidden justify-items-end z-50">
+        <div class="flex flex-col items-center text-gray-400 uppercase bg-slate-50 space-y-5">
+          <a href="index.html" class=" font-semibold hover:text-blue-700">Home</a>
+          <a href="promocode.html" class=" font-semibold text-blue-700 hover:text-blue-700">promo codes</a>
+          <a href="contact.html" class=" font-semibold hover:text-blue-700">contact</a>
+          <a href="blog.html" class=" font-semibold hover:text-blue-700">blog</a>
+          <a href="signup.html"><button class="uppercase shadow-blue-300 shadow-sm bg-blue-700 text-white font-semibold  rounded-md p-2 ">register / login</button></a>
+
+        </div>
+      </div>
+    </nav>
+    <main class="max-w-full min-h-screen">
+      <header class="h-96 max-w-full grid place-items-center bg-slate-100" id="pheader1">
+        <h1 class="text-4xl sm:text-5xl   text-center">Prestmit Promo Codes</h1>
+      </header>
+      <section id="psection1" class="max-w-sm p-2 mx-auto space-y-5 py-16 sm:max-w-6xl">
+        <h2 class="sm:text-4xl text-3xl ">About Promo Codes</h2>
+        <p class="text-justify sm:text-left leading-7 text-gray-400 pb-4">
+          Prestmit Promo codes are more like discount codes, or coupon codes that when applied on
+          trade page, you get extra money on your trade amount. From time to time, Prestmit issue
+          out Promo codes for different purposes; may be act of random kindness, to celebrate a
+          milestone, to reward customers, promotions e.t.c.
+          <br />
+          <br />
+          Generally, as a Prestmit user, you are entitled to using Promo codes as long as you meet
+          the Promo code requirements. The extra value you will get on your trade amount depends on
+          the value of the promo code itself. Available promo codes are frequently posted on
+          Prestmit social media pages, sent via emails and also the latest promo code is always
+          updated on this page.
+        </p>
+
+        <button class="bg-blue-700 rounded-md py-2 px-5 text-white  text-lg">
+          Register a Prestmit Account<i class="fa-solid fa-chevron-right ml-2"></i>
+        </button>
+      </section>
+      <section id="psection2" class="max-w-full bg-slate-50 py-16">
+        <section
+          class="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 justify-between sm:max-w-6xl max-w-sm mx-auto px-2 sm:px-0">
+          <article class="sm:w-1/2 mx-auto">
+            <div class="space-y-3">
+              <h2 class="sm:text-4xl text-3xl ">Latest Promo Code</h2>
+              <p class="text-xl uppercase  text-gray-400">
+                ₦1,000 <i class="text-red-400">EXPIRED</i>
+              </p>
+              <p class="text-yellow-500 space-x-1 text-lg font-light">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </p>
+            </div>
+            <div class="space-y-3 mt-7">
+              <h3 class="text-xl tracking-wider uppercase ">Description:</h3>
+              <p class="text-gray-400">EID MUBARAK! Thanks for choosing Prestmit.</p>
+
+              <ul class="text-gray-400 space-y-3">
+                <li>
+                  <i class="fa-regular fa-circle-check text-blue-600 mr-1"></i
+                  ><span class=" text-gray-500">PROMO CODE:</span> EIDPROMO
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check text-blue-600 mr-1"></i
+                  ><span class=" text-gray-500">MINIMUM TRADE AMOUNT:</span> ₦15,000
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check text-blue-600 mr-1"></i
+                  ><span class=" text-gray-500">EXPIRY DATE:</span> Sun, Jul 2, 2023
+                  12:00 PM (2 months ago)
+                </li>
+                <li class="text-base">
+                  <i class="fa-regular fa-circle-check text-blue-600 mr-1"></i
+                  ><span class=" text-gray-500">USAGE LIMIT:</span> 30000 *Expires
+                  after 30000 applications*
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check text-blue-600 mr-1"></i
+                  ><span class=" text-gray-500">CATEGORIES</span> (The code will only
+                  work for these categories): Amazon, iTunes / Apple, Google Play, Nordstrom,
+                  Sephora, Vanilla, Target, Play Station, Nike, American Express, Macy's, OffGamers,
+                  Walmart Visa, JC Penny Sephora, GameStop, Saks, Target Visa, Razer Gold, AMEX
+                  SERVE.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="sm:w-1/2 mx-auto">
+            <img src="../images/IMG_WithCards-Transparent-1.webp" alt="" class="" />
+          </article>
+        </section>
+      </section>
+      <section id="psection3" class="mx-auto py-16">
+        <article class="max-w-xl text-center mx-auto">
+          <h1 class="text-4xl mb-7">How To Use Promo Codes</h1>
+          <p class="text-slate-400">
+            This is a quick walkthrough on
+            <span class="text-blue-500">How to use Prestmit Promo Codes</span> easily and get some
+            extra cash for yourself.
+          </p>
+        </article>
+        <i
+          class="fa-solid fa-star block mx-auto text-center mt-10 mb-3 stroke-blue-400 text-blue-700 text-2xl"></i>
+        <article class="mx-auto sm:max-w-3xl max-w-sm mt-5 space-y-5">
+          <aside aria-label="001" class="flex sm:flex-row flex-col gap-x-10">
+            <div
+              class="border border-slate-200 shadow-sm shadow-slate-200 rounded-lg inline sm:w-1/2 h-fit">
+              <p class="uppercase px-5 py-2">first</p>
+            </div>
+            <div class="p-5 border border-slate-50 shadow-sm shadow-slate-300 rounded-lg sm:w-1/2">
+              <h4 class="text-xl mb-4  ">Locate The Field</h4>
+              <p class="text-slate-400">
+                On the trade page, locate the field titled "Promo Code". It's a small text field
+                where you are meant to input or paste the promo code.
+              </p>
+            </div>
+          </aside>
+
+          <aside aria-label="001" class="flex sm:flex-row-reverse flex-col gap-x-10">
+            <div
+              class="border border-slate-200 shadow-sm shadow-slate-200 rounded-lg inline sm:w-1/2 h-fit">
+              <p class="uppercase px-5 py-2">second</p>
+            </div>
+            <div class="p-5 border border-slate-50 shadow-sm shadow-slate-300 rounded-lg sm:w-1/2">
+              <h4 class="text-xl mb-4  ">PASTE CODE</h4>
+              <p class="text-slate-400">
+                Input the code manually in the box or paste it if you already have it copied. Ensure that there are no spaces in between, before or after the code.
+              </p>
+            </div>
+          </aside>
+          <aside aria-label="001" class="flex sm:flex-row flex-col gap-x-10">
+            <div
+              class="border border-slate-200 shadow-sm shadow-slate-200 rounded-lg inline sm:w-1/2 h-fit">
+              <p class="uppercase px-5 py-2">Third</p>
+            </div>
+            <div class="p-5 border border-slate-50 shadow-sm shadow-slate-300 rounded-lg sm:w-1/2">
+              <h4 class="text-xl mb-4  ">Apply Code
+              </h4>
+              <p class="text-slate-400">
+                There is a small button beside the field that says "APPLY CODE". Once you click this button, the system will check if your trade details meet the requirements of the promo code.
+              </p>
+            </div>
+          </aside>
+          <aside aria-label="001" class="flex sm:flex-row-reverse flex-col gap-x-10">
+            <div
+              class="border border-slate-200 shadow-sm shadow-slate-200 rounded-lg inline sm:w-1/2 h-fit">
+              <p class="uppercase px-5 py-2">fourth</p>
+            </div>
+            <div class="p-5 border border-slate-50 shadow-sm shadow-slate-300 rounded-lg sm:w-1/2">
+              <h4 class="text-xl mb-4  ">Get Result</h4>
+              <p class="text-slate-400">
+                If successful, the amount on the promo code would be added to your trade amount E.G If your trade is 30,000 naira and the promo code amount is 2,000 naira, that means you'll receive 32,000 naira total.
+              </p>
+            </div>
+          </aside>
+          <aside aria-label="001" class="flex sm:flex-row flex-col gap-x-10">
+            <div
+              class="border border-slate-200 shadow-sm shadow-slate-200 rounded-lg inline sm:w-1/2 h-fit">
+              <p class="uppercase px-5 py-2">fifth</p>
+            </div>
+            <div class="p-5 border border-slate-50 shadow-sm shadow-slate-300 rounded-lg sm:w-1/2">
+              <h4 class="text-xl mb-4  ">Remove Code</h4>
+              <p class="text-slate-400">
+                In case the code did not work, that means it didn't meet the requirement. You can choose to remove it to add another one, or proceed with the trade without CODE. Note that promo codes are optional.
+              </p>
+            </div>
+          </aside>
+          <aside aria-label="001" class="flex sm:flex-row-reverse flex-col gap-x-10">
+            <div
+              class="border border-slate-200 shadow-sm shadow-slate-200 rounded-lg inline sm:w-1/2 h-fit">
+              <p class="uppercase px-5 py-2">final</p>
+            </div>
+            <div class="p-4 border border-slate-300 shadow-md shadow-slate-300 rounded-md flex-col sm:w-1/2 space-y-3">
+             <div class="">
+                <img src="../images/Screen-Shot-2021-05-13-at-2.30.51-PM.png" alt="">
+             </div>
+             <div>
+              <h4 class="text-xl mb-4  ">Screenshot</h4>
+              <p class="text-slate-400">
+                This is a quick screenshot of what it looks like after applying the code.
+             </div>
+              </p>
+            </div>
+          </aside>
+        </article>
+      </section>
+      <section id="psection4" class="bg-slate-50 mx-auto text-center py-28 round">
+        <div class="space-y-8">
+          <div class="space-y-7">
+            <h1 class="sm:text-4xl text-3xl">Just In Case You Need Help.</h1>
+          <p>Feel free to <span class="text-blue-500">reach out to us</span> and our team will help resolve your issue quickly.</p>
+          </div>
+          <div class=" mt-5 space-x-4 mx-auto  flex fle-col max-w-sm  ">
+            <button
+              class="bg-blue-700 text-white  border border-blue-700 rounded-md w-56 h-11 ">
+              Contact Us Now
+            </button>
+            <button
+              class="bg-white border-blue-700 border text-blue-700  rounded-md w-56  h-11 ">
+              Proceed to Dashboard
+            </button>
+          </div>
+        </div>
+
+      </section>
+    </main>
+     <!-- FOOTER  -->
+     <footer class="mx-auto bg-blue-950 ">
+      <footer class="mx-auto max-w-sm sm:max-w-6xl text-gray-400">
+        <section id="footer-1" class="py-10 flex justify-between sm:items-center sm:flex-row flex-col sm:max-w-5xl sm:pt-36 sm:pb-20">
+          <div>
+            <h1 class="text-2xl text-white mb-3 ">Download Our App Now !</h1>
+          <p>Install the Prestmit app to trade on-the-go, anywhere, anytime</p>
+          </div>
+          <div>
+            <button
+            class="mt-7 sm:mt-0 bg-blue-700 text-white  border border-blue-700 rounded-md w-44 h-11">
+            Download Now
+          </button>
+          </div>
+        </section>
+        <section class="grid sm:grid-cols-4   gap-x-5">
+          <article>
+            <h1 class="mb-10"><img src="../images/prestwhite.png" alt="Logo" class="mr-2 h-7 w-28" /></h1>
+              <p class="leading-7">
+                At Prestmit, we believe everyone deserves the chance to gain, profit, and benefit from modern digital assets, which drives us to help those most in need.
+<br><br>
+Prestmit is available for both web and mobile users. Feel free to reach out to us and our team will help resolve your issue quickly.
+
+
+              </p>
+              <br>
+              <address >Email: <a class="text-blue-500">Help@prestmit.com</a></address>
+              <div class="flex gap-x-2 mt-3 mb-7">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" rounded-md border p-1 border-gray-400 fea-social"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rounded-md border p-1 border-gray-400 icon-sm fea-social"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rounded-md border p-1 border-gray-400 fea-social"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+              </div>
+
+          </article>
+          <article class="mb-5 sm:mb-0">
+            <h2 class="text-xl text-white mb-10">Products</h2>
+            <ul class="space-y-4 ">
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Buy Gift Cards</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2 "></i><a href="" class="text-lg" >Homepage</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Gift Cards - Naira</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Gift Cards - Cedis</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" > Gift Card to Bitcoin</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Gift Card to USDT</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Bitcoin in Nigeria</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Bitcoin in Ghana</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Bitcoin News</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Tether (USDT) Wallet</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Dogecoin</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Litecoin</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Sell Airtime to Cash</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >NFTs</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="" >Promo Codes</a></li>
+
+
+            </ul>
+          </article>
+          <article class="mb-5 sm:mb-0">
+            <h2 class="text-xl text-white mb-10">Useful Links</h2>
+            <ul class="space-y-4 ">
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Download Android App</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""> Download IPhone App</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">How to Trade</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""> Current Rates</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""> Best Gift Cards</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Check Balance</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Support & FAQs</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>FAQs</li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Terms Of Use</li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Privacy Policies</li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>We Are Hiring</li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Blog</li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Contact Us</li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href=""></a>Platform Status</li>
+              
+
+            </ul>
+          </article>
+          <article>
+            <h2 class="text-xl text-white mb-10">Gift Cards</h2>
+            <ul class="space-y-4 ">
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Amazon Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Spar Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell AMEX Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Razer Gold Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Apple Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Shoprite Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell eBay Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Google Play Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Nordstrom Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Sephora Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Steam Gift Card</a></li>
+              <li class="flex items-center"><i class="fa-sharp fa-solid fa-chevron-right fa-2xs mr-2"></i><a href="">Sell Vanilla Gift Card</a></li>
+
+            </ul>
+          </article>
+        </section>
+       
+      </footer>
+      <hr class="container pb-5 mt-5 text-gray-400 " >
+        <section class="sm:max-w-6xl max-w-md flex flex-col space-y-5 sm:space-y-0 sm:flex-row items-center justify-between mx-auto py-8">
+          <div>
+            <span class="text-gray-400">© 2023 Prestmit. All Rights Reserved.</span>
+          </div>
+          <div class="flex gap-x-1">
+            <a href=""><img src="../images/oie_27165115wiIT9M1i.png" alt=""></a>
+            <a href=""><img src="../images/oie_271651496Lb7oE9C.png" alt=""></a>
+            <a href=""><img src="../images/oie_27165225rE84SkuM.png" alt=""></a>
+            <a href=""><img src="../images/oie_27165249JYwAQ8Ct.png" alt=""></a>
+            <a href=""><img src="../images/oie_27165264bFhrtDI.png" alt=""></a>
+          </div>
+
+        </section>
+    </footer>
+  </body>
+</html>

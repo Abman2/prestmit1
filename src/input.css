@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+  body{
+    font-family: 'nunito Sans', sans-serif;  }
+ 
+  #section-3{
+    background-image: url(../images/womaanbtc.webp);
+    
+    background-repeat: no-repeat;
+    background-size: 160%;
+    background-position: center;
+    background-blend-mode:darken;
+    background-color: rgba(60,72,88,.7);
+  }
+  #signup-image{
+    background-color:  rgb(37, 57, 146);
+   width: 62%;
+   max-width: 62%;
+   
+  }
+  #bheader{
+    background-image: url(../images/hero-lines.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+
+
+
+  @media (min-width: 640px){
+   #sign{
+    width: 38%;
+   }
+ 
+  }
+
+
+  @media (max-width: 640px){
+    #section-3{
+    background-size: 350%;
+    }
+ 
+  }
+}
